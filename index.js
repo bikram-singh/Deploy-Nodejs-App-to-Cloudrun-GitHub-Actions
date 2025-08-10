@@ -8,12 +8,17 @@ const port = process.env.PORT || 8080;
 
 // Root endpoint
 app.get('/', (req, res) => {
-  res.status(200).send('Hello, World!');
+  res.status(200).send('Hello, Welcome to Nodejs Application!');
 });
 
 // Work endpoint
 app.get('/work', (req, res) => {
-  res.status(200).send('Work in progress...');
+  res.status(200).send('Nodejs Application Work in progress...');
+});
+
+// Status endpoint
+app.get('/status', (req, res) => {
+  res.status(200).send('Still in progress...');
 });
 
 // Health check endpoint
